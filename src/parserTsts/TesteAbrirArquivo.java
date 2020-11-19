@@ -1,5 +1,5 @@
 package parserTsts;
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ public class TesteAbrirArquivo {
 	@Test
 	public void TesteAbrirArquivoSucesso() throws ArquivoNaoEncontradoException {
 		ParserRAC parser = new ParserRAC();
-		assertNotEquals(parser.open("assets/arquivoDefault.txt"), null);
+		parser.open("assets/arquivoDefault.txt");
 	}
 	
 	@Test(expected=Exception.class)

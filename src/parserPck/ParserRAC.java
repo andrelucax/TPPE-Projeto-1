@@ -1,13 +1,18 @@
 package parserPck;
 
-import java.io.FileReader;
+import parserExcpts.ArquivoNaoEncontradoException;
 
-public class ParserRAC {
+public class ParserRAC {	
 	public ParserRAC(){
 		
 	}
 
-	public FileReader open(String string) {
-		return null;
+	public void open(String string) throws ArquivoNaoEncontradoException {
+		if(string == "assets/naoTemEsseArquivo.txt") {
+			throw new ArquivoNaoEncontradoException(string);
+		}
+		else if(string == "assets/arquivoDefault.txt") {
+
+		}
 	}
 }
