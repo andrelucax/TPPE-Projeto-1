@@ -12,7 +12,7 @@ public class ParserRAC {
 		
 	}
 
-	public void open(String string) throws ArquivoNaoEncontradoException {
+	public void lerArq(String string) throws ArquivoNaoEncontradoException {
 		try {
 			arq = new FileReader(string);
 		}
